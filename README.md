@@ -4,7 +4,7 @@ API ekstraksi media berperforma tinggi yang dibangun di atas bahasa pemrograman 
 
 <p align="center">
   <img src="MobileView.png" width="45%" />
-  <img src="DesktopView.png" width="45%" />
+  <img src="DesktopView.jpg" width="45%" />
 </p>
 
 ## Analisis Arsitektur dan Keunggulan Teknis
