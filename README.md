@@ -3,8 +3,8 @@
 API ekstraksi media berperforma tinggi yang dibangun di atas bahasa pemrograman Python 3.10+ dengan framework FastAPI. Proyek ini menyediakan solusi pengunduhan video TikTok tanpa watermark dengan mengutamakan stabilitas sistem dan efisiensi penggunaan sumber daya server.
 
 <p align="center">
-  <img src="MobileView.png" width="45%" />
-  <img src="DesktopView.jpg" width="45%" />
+  <img src="MobileView.jpg" width="45%" />
+  <img src="DesktopView.png" width="45%" />
 </p>
 
 ## Analisis Arsitektur dan Keunggulan Teknis
