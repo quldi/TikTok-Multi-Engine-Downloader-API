@@ -2,6 +2,8 @@
 
 API ekstraksi media berperforma tinggi yang dibangun di atas bahasa pemrograman Python 3.10+ dengan framework FastAPI. Proyek ini menyediakan solusi pengunduhan video TikTok tanpa watermark dengan mengutamakan stabilitas sistem dan efisiensi penggunaan sumber daya server.
 
+![Preview API](screenshot.png)
+
 ## Analisis Arsitektur dan Keunggulan Teknis
 
 ### 1. Sistem Multi-Engine (High Availability)
@@ -22,5 +24,6 @@ Integrasi rotasi User-Agent dinamis dan eksekusi skrip melalui PyExecJS untuk me
 ```bash
 pip install -r requirements.txt
 
-### Eksekusi
+### Eksekusi Server
+```bash
 uvicorn app:app --reload
