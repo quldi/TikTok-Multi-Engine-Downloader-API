@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title">TikTok Downloader No Watermark by SUEK</title>
+
+    <link rel="alternate" hreflang="x-default" href="https://suek.my.id/" />
+    <link rel="canonical" href="https://suek.my.id/" />
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <meta name="description" id="meta-desc" content="Geetik: TikTok Downloader no watermark gratis. Unduh video TikTok kualitas HD tanpa logo, cepat, dan aman. Tanpa login, mendukung Android, iOS, dan PC.">
+    <meta name="keywords" content="tiktok downloader, download video tiktok, tiktok tanpa watermark, geetik, download tiktok mp4">
+    
+    <meta property="og:title" content="Website - TikTok Downloader No Watermark Tercepat">
+    <meta property="og:description" content="Unduh video TikTok tanpa watermark HD gratis di sini.">
+    <meta property="og:url" content="https://suek.my.id">
+    <meta property="og:type" content="website">
+
+    <style>
+        :root { --primary: #00f2ea; --secondary: #ff0050; --bg: #0f0f0f; --card: #1a1a1a; --text-muted: #aaa; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: #fff; margin: 0; line-height: 1.6; }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        .hero { text-align: center; padding: 50px 20px; }
+        h1 { font-size: 2.2rem; color: var(--primary); margin-bottom: 10px; text-transform: capitalize; }
+        h2 { color: var(--primary); border-bottom: 1px solid #333; padding-bottom: 10px; font-size: 1.6rem; margin-top: 30px; }
+        h3 { color: #fff; font-size: 1.2rem; margin-top: 20px; }
+        .hero p { font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+        
+        .container { background: var(--card); padding: 35px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.7); text-align: center; border: 1px solid #333; margin-bottom: 30px; position: relative; }
+        
+        input { 
+            width: 100%; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 12px; 
+            border: 1px solid #444; 
+            background: #262626; 
+            color: white; 
+            box-sizing: border-box; 
+            outline: none; 
+            transition: 0.3s; 
+            font-size: 16px; 
+        }
+        input:focus { border-color: var(--primary); box-shadow: 0 0 15px rgba(0, 242, 234, 0.2); }
+        
+        button { 
+            width: 100%; 
+            min-height: 56px; 
+            padding: 18px; 
+            background: linear-gradient(45deg, var(--secondary), var(--primary)); 
+            color: #000; 
+            border: none; 
+            border-radius: 12px; 
+            font-weight: 800; 
+            font-size: 1.1rem; 
+            cursor: pointer; 
+            transition: 0.3s; 
+            letter-spacing: 1px; 
+        }
+        button:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(255, 0, 80, 0.3); }
+        
+        #msgDisplay { margin-bottom: 15px; font-size: 0.9rem; padding: 12px; border-radius: 8px; display: none; }
+        .msg-warn { display: block !important; background: rgba(255, 0, 80, 0.15); color: #ff4d85; border: 1px solid var(--secondary); }
+        .msg-info { display: block !important; background: rgba(0, 242, 234, 0.15); color: var(--primary); border: 1px solid var(--primary); }
+        .ads-placeholder { display: none; } 
+        .content { background: var(--card); padding: 30px; border-radius: 18px; margin-bottom: 25px; border: 1px solid #222; }
+        .steps { padding-left: 20px; color: #eee; }
+        .steps li { margin-bottom: 12px; }
+        
+        footer { text-align: center; padding: 50px 20px; color: #666; font-size: 0.85rem; border-top: 1px solid #222; }
+        .footer-links { margin-bottom: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .footer-links a { 
+            color: #aaa; 
+            text-decoration: none; 
+            padding: 12px; 
+            display: inline-block;
+            transition: 0.2s;
+        }
+        .footer-links a:hover { color: var(--primary); }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .hero { padding: 30px 10px; }
+            .container { padding: 25px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="hero">
+        <h1 id="h1-title">TikTok Downloader No Watermark</h1>
+        <p id="h1-desc">Cara tercepat unduh video TikTok tanpa watermark kualitas HD secara gratis dan aman.</p>
+    </header>
+
+    <div class="ads-placeholder"></div>
+
+    <main class="container">
+        <div id="msgDisplay"></div>
+        <input type="text" id="urlInput" placeholder="Tempel link TikTok di sini..." aria-label="Link Video TikTok">
+        <button id="btnDownload" onclick="unduh()">UNDUH VIDEO</button>
+    </main>
+
+    <div class="content">
+        <h2 id="h2-how">Cara Download Video TikTok Tanpa Watermark</h2>
+        <p id="p-how-desc" style="color: var(--text-muted); margin-bottom: 15px;">Geetik memberikan kemudahan bagi Anda untuk menyimpan konten video favorit dalam hitungan detik.</p>
+        <ol class="steps" id="ol-steps">
+            <li>Salin tautan video dari aplikasi TikTok.</li>
+            <li>Tempel tautan ke kotak input <strong>Website</strong> di atas.</li>
+            <li>Klik tombol <strong>Unduh Video</strong>.</li>
+            <li>Video akan tersimpan otomatis tanpa logo ke galeri Anda.</li>
+        </ol>
+
+        <h3 id="h3-features">Kelebihan Menggunakan Geetik Downloader</h3>
+        <ul class="steps" id="ul-features" style="list-style-type: '✔ ';">
+            <li><strong>Kualitas Tinggi:</strong> Mendukung format MP4 HD.</li>
+            <li><strong>Tanpa Aplikasi:</strong> Cukup gunakan browser di HP atau Laptop.</li>
+            <li><strong>Privasi Aman:</strong> Kami tidak menyimpan data video Anda.</li>
+        </ul>
+
+        <h3 id="h3-devices">Download TikTok MP4 di Semua Perangkat</h3>
+        <p id="p-devices-desc" style="color: var(--text-muted); font-size: 0.95rem;">Layanan kami kompatibel sepenuhnya dengan perangkat Android, iPhone (iOS), Windows, dan macOS. Nikmati pengalaman unduh video tanpa batas di mana saja.</p>
+    </div>
+
+    <footer>
+        <nav class="footer-links">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+        <p>&copy; 2026 <strong>SUEK</strong> - <span id="span-footer">Solusi Download TikTok Terbaik.</span></p>
+    </footer>
+</div>
+
+<script>
+    const langData = {
+        en: {
+            title: "TikTok Downloader No Watermark by SUEK",
+            description: "Free TikTok Downloader no watermark. Download TikTok videos in HD quality without logo, fast and secure. No login, supports Android, iOS, and PC.",
+            h1Title: "TikTok Downloader No Watermark",
+            h1Desc: "The fastest way to download TikTok videos without watermark in HD quality for free and secure.",
+            inputPlaceholder: "Paste TikTok link here...",
+            btnDownload: "DOWNLOAD VIDEO",
+            h2How: "How to Download TikTok Video Without Watermark",
+            pHowDesc: "Website makes it easy for you to save your favorite video content in seconds.",
+            steps: [
+                "Copy the video link from the TikTok app.",
+                "Paste the link into the <strong>Website</strong> input box above.",
+                "Click the <strong>Download Video</strong> button.",
+                "The video will be automatically saved without a logo to your gallery."
+            ],
+            h3Features: "Advantages of Using Website Downloader",
+            features: [
+                "<strong>High Quality:</strong> Supports MP4 HD format.",
+                "<strong>No App Needed:</strong> Just use a browser on Mobile or Laptop.",
+                "<strong>Privacy Secure:</strong> We do not store your video data."
+            ],
+            h3Devices: "Download TikTok MP4 on All Devices",
+            pDevicesDesc: "Our service is fully compatible with Android, iPhone (iOS), Windows, and macOS devices. Enjoy an unlimited video download experience anywhere.",
+            footerSol: "Best TikTok Download Solution.",
+            msgEmpty: "Please paste a TikTok link!",
+            msgProcess: "Processing video... Please wait."
+        }
+    };
+
+    function applyLanguage() {
+        const userLang = navigator.language || navigator.userLanguage;
+        if (!userLang.startsWith('id')) {
+            const d = langData.en;
+            document.title = d.title;
+            document.getElementById('meta-desc').setAttribute('content', d.description);
+            document.getElementById('h1-title').innerText = d.h1Title;
+            document.getElementById('h1-desc').innerText = d.h1Desc;
+            document.getElementById('urlInput').placeholder = d.inputPlaceholder;
+            document.getElementById('btnDownload').innerText = d.btnDownload;
+            document.getElementById('h2-how').innerText = d.h2How;
+            document.getElementById('p-how-desc').innerText = d.pHowDesc;
+            const ol = document.getElementById('ol-steps');
+            ol.innerHTML = d.steps.map(s => `<li>${s}</li>`).join('');
+            document.getElementById('h3-features').innerText = d.h3Features;
+            const ul = document.getElementById('ul-features');
+            ul.innerHTML = d.features.map(f => `<li>${f}</li>`).join('');
+            document.getElementById('h3-devices').innerText = d.h3Devices;
+            document.getElementById('p-devices-desc').innerText = d.pDevicesDesc;
+            document.getElementById('span-footer').innerText = d.footerSol;
+        }
+    }
+
+    window.onload = applyLanguage;
+
+    function unduh() {
+        const urlInput = document.getElementById('urlInput');
+        const btn = document.getElementById('btnDownload');
+        const msg = document.getElementById('msgDisplay');
+        const url = urlInput.value.trim();
+        const isEn = !(navigator.language || navigator.userLanguage).startsWith('id');
+
+        if (!url) {
+            msg.className = 'msg-warn';
+            msg.innerText = isEn ? langData.en.msgEmpty : "Masukkan link video TikTok!";
+            return;
+        }
+
+        btn.disabled = true;
+        msg.className = 'msg-info';
+        msg.innerText = isEn ? langData.en.msgProcess : "Memproses video... Mohon tunggu.";
+
+        setTimeout(() => {
+            window.location.href = `/api/v1/get_video?url=${encodeURIComponent(url)}`;
+            setTimeout(() => {
+                btn.disabled = false;
+                msg.className = '';
+                msg.innerText = "";
+            }, 6000);
+        }, 1000);
+    }
+</script>
+</body>
+</html>

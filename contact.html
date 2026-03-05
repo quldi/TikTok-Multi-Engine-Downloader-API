@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title">Contact Us - TikTok Downloader</title>
+    
+    <link rel="canonical" href="https://suek.my.id/contact" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <style>
+        :root { --primary: #00f2ea; --secondary: #ff0050; --bg: #0f0f0f; --card: #1a1a1a; --text-muted: #aaa; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: #fff; margin: 0; line-height: 1.6; }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        .hero { text-align: center; padding: 40px 20px; }
+        h1 { font-size: 2.2rem; color: var(--primary); margin-bottom: 10px; }
+        
+        .content { background: var(--card); padding: 40px 20px; border-radius: 20px; border: 1px solid #222; box-shadow: 0 10px 40px rgba(0,0,0,0.5); text-align: center; }
+        .email-box { 
+            background: #262626; 
+            padding: 20px; 
+            border-radius: 12px; 
+            display: inline-block; 
+            margin: 20px 0; 
+            border: 1px solid #333;
+            word-break: break-all;
+        }
+        .email-box h2 { color: #fff; margin: 0; font-size: 1.4rem; letter-spacing: 0.5px; }
+        
+        p { color: #ccc; margin-bottom: 10px; }
+        .desc { color: var(--text-muted); font-size: 0.95rem; margin-top: 15px; }
+        
+        .back-btn { 
+            display: inline-block; 
+            margin-top: 30px; 
+            padding: 12px 25px; 
+            background: linear-gradient(45deg, var(--secondary), var(--primary)); 
+            color: #000; 
+            text-decoration: none; 
+            border-radius: 10px; 
+            font-weight: 800;
+            transition: 0.3s;
+        }
+        .back-btn:hover { transform: translateY(-2px); opacity: 0.9; }
+
+        footer { text-align: center; padding: 40px 20px; color: #666; font-size: 0.85rem; }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .content { padding: 30px 15px; }
+            .email-box h2 { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="hero">
+        <h1 id="h1-title">Contact Us</h1>
+        <p id="h1-desc" style="color: var(--text-muted);">Punya pertanyaan atau kendala teknis?</p>
+    </header>
+
+    <main class="content">
+        <p id="p-support">Hubungi pengembang di:</p>
+        
+        <div class="email-box">
+            <h2>support@suek.my.id</h2>
+        </div>
+
+        <p id="p-response" class="desc">Kami biasanya membalas pesan dalam waktu 1x24 jam pada hari kerja.</p>
+
+        <a href="/" class="back-btn" id="btn-back">Kembali ke Beranda</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>SUEK</strong> - Tiktok Downloader.</p>
+    </footer>
+</div>
+
+<script>
+    const langData = {
+        en: {
+            title: "Contact Us - TikTok Downloader",
+            h1Title: "Contact Us",
+            h1Desc: "Have questions or technical issues?",
+            pSupport: "Contact developer at:",
+            pResponse: "We usually respond within 24 hours during business days.",
+            btnBack: "Back to Home"
+        }
+    };
+
+    function applyLanguage() {
+        const userLang = navigator.language || navigator.userLanguage;
+        if (!userLang.startsWith('id')) {
+            const d = langData.en;
+            document.title = d.title;
+            document.getElementById('h1-title').innerText = d.h1Title;
+            document.getElementById('h1-desc').innerText = d.h1Desc;
+            document.getElementById('p-support').innerText = d.pSupport;
+            document.getElementById('p-response').innerText = d.pResponse;
+            document.getElementById('btn-back').innerText = d.btnBack;
+        }
+    }
+    window.onload = applyLanguage;
+</script>
+
+</body>
+</html>

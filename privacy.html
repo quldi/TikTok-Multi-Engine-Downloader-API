@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title">Privacy Policy - Geetik TikTok Downloader</title>
+    
+    <link rel="canonical" href="https://geetik.com/privacy-policy" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <style>
+        :root { --primary: #00f2ea; --secondary: #ff0050; --bg: #0f0f0f; --card: #1a1a1a; --text-muted: #aaa; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: #fff; margin: 0; line-height: 1.6; }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        .hero { text-align: center; padding: 40px 20px; }
+        h1 { font-size: 2.2rem; color: var(--primary); margin-bottom: 10px; }
+        
+        .content { background: var(--card); padding: 35px; border-radius: 20px; border: 1px solid #222; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+        h2 { color: var(--primary); font-size: 1.4rem; margin-top: 25px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        p { color: #ccc; margin-bottom: 15px; }
+        ul { padding-left: 20px; color: #ccc; }
+        ul li { margin-bottom: 10px; }
+        
+        .back-btn { 
+            display: inline-block; 
+            margin-top: 30px; 
+            padding: 12px 25px; 
+            background: linear-gradient(45deg, var(--secondary), var(--primary)); 
+            color: #000; 
+            text-decoration: none; 
+            border-radius: 10px; 
+            font-weight: 800;
+            transition: 0.3s;
+        }
+        .back-btn:hover { transform: translateY(-2px); opacity: 0.9; }
+
+        footer { text-align: center; padding: 40px 20px; color: #666; font-size: 0.85rem; }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="hero">
+        <h1 id="h1-title">Privacy Policy</h1>
+        <p id="h1-date" style="color: var(--text-muted);">Last Updated: 2026</p>
+    </header>
+
+    <main class="content">
+        <p id="p-intro">Kami di <strong>Tiktok Downloader</strong> sangat menjaga privasi Anda. Halaman ini menjelaskan bagaimana kami mengelola data saat Anda menggunakan layanan kami.</p>
+        
+        <h2 id="h2-storage">Penyimpanan Data</h2>
+        <ul id="ul-storage">
+            <li>Kami <strong>tidak menyimpan</strong> video atau konten yang Anda unduh di server kami.</li>
+            <li>Semua proses pengunduhan dilakukan secara *real-time* melalui jalur transmisi yang aman.</li>
+        </ul>
+
+        <h2 id="h2-info">Informasi Pribadi</h2>
+        <ul id="ul-info">
+            <li>Layanan ini dapat digunakan sepenuhnya secara anonim.</li>
+            <li>Kami <strong>tidak meminta</strong> email, nama, atau data pribadi lainnya untuk mengunduh video.</li>
+        </ul>
+
+        <h2 id="h2-ads">Iklan & Cookies</h2>
+        <p id="p-ads">Kami menggunakan penyedia iklan pihak ketiga (seperti Google AdSense) yang mungkin menggunakan *cookies* untuk menyajikan iklan berdasarkan kunjungan Anda ke situs ini dan situs lainnya di internet.</p>
+
+        <h2 id="h2-logs">Log Server</h2>
+        <p id="p-logs">Seperti situs web standar lainnya, kami mengumpulkan log teknis dasar (IP Address, tipe browser, waktu akses) murni untuk pemantauan performa server dan keamanan.</p>
+
+        <a href="/" class="back-btn" id="btn-back">Kembali ke Beranda</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>SUEK</strong> - Privacy & Safety First.</p>
+    </footer>
+</div>
+
+<script>
+    const langData = {
+        en: {
+            title: "Privacy Policy - TikTok Downloader",
+            h1Title: "Privacy Policy",
+            h1Date: "Last Updated: 2026",
+            intro: "At website, we prioritize your privacy. This page explains how we manage data when you use our services.",
+            h2Storage: "Data Storage",
+            ulStorage: [
+                "We <strong>do not store</strong> any videos or content you download on our servers.",
+                "All download processes are performed in real-time through secure transmission."
+            ],
+            h2Info: "Personal Information",
+            ulInfo: [
+                "This service can be used completely anonymously.",
+                "We <strong>do not ask</strong> for your email, name, or any other personal data to download videos."
+            ],
+            h2Ads: "Ads & Cookies",
+            pAds: "We use third-party advertising providers (such as Google AdSense) that may use cookies to serve ads based on your visit to this site and other sites on the internet.",
+            h2Logs: "Server Logs",
+            pLogs: "Like other standard websites, we collect basic technical logs (IP Address, browser type, access time) purely for server performance monitoring and security.",
+            btnBack: "Back to Home"
+        }
+    };
+
+    function applyLanguage() {
+        const userLang = navigator.language || navigator.userLanguage;
+        if (!userLang.startsWith('id')) {
+            const d = langData.en;
+            document.title = d.title;
+            document.getElementById('h1-title').innerText = d.h1Title;
+            document.getElementById('h1-date').innerText = d.h1Date;
+            document.getElementById('p-intro').innerText = d.intro;
+            document.getElementById('h2-storage').innerText = d.h2Storage;
+            document.getElementById('ul-storage').innerHTML = d.ulStorage.map(s => `<li>${s}</li>`).join('');
+            document.getElementById('h2-info').innerText = d.h2Info;
+            document.getElementById('ul-info').innerHTML = d.ulInfo.map(i => `<li>${i}</li>`).join('');
+            document.getElementById('h2-ads').innerText = d.h2Ads;
+            document.getElementById('p-ads').innerText = d.pAds;
+            document.getElementById('h2-logs').innerText = d.h2Logs;
+            document.getElementById('p-logs').innerText = d.pLogs;
+            document.getElementById('btn-back').innerText = d.btnBack;
+        }
+    }
+    window.onload = applyLanguage;
+</script>
+
+</body>
+</html>

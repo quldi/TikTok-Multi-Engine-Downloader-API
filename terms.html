@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title">Terms of Service - TikTok Downloader</title>
+    
+    <link rel="canonical" href="https://suek.my.id/terms" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <style>
+        :root { --primary: #00f2ea; --secondary: #ff0050; --bg: #0f0f0f; --card: #1a1a1a; --text-muted: #aaa; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: #fff; margin: 0; line-height: 1.6; }
+        .wrapper { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        .hero { text-align: center; padding: 40px 20px; }
+        h1 { font-size: 2.2rem; color: var(--secondary); margin-bottom: 10px; }
+        
+        .content { background: var(--card); padding: 35px; border-radius: 20px; border: 1px solid #222; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+        h2 { color: var(--primary); font-size: 1.4rem; margin-top: 25px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        p { color: #ccc; margin-bottom: 15px; }
+        ol { padding-left: 20px; color: #ccc; }
+        ol li { margin-bottom: 15px; padding-left: 10px; }
+        
+        .back-btn { 
+            display: inline-block; 
+            margin-top: 30px; 
+            padding: 12px 25px; 
+            background: linear-gradient(45deg, var(--secondary), var(--primary)); 
+            color: #000; 
+            text-decoration: none; 
+            border-radius: 10px; 
+            font-weight: 800;
+            transition: 0.3s;
+        }
+        .back-btn:hover { transform: translateY(-2px); opacity: 0.9; }
+
+        footer { text-align: center; padding: 40px 20px; color: #666; font-size: 0.85rem; }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="hero">
+        <h1 id="h1-title">Terms of Service</h1>
+        <p id="h1-desc" style="color: var(--text-muted);">Ketentuan penggunaan layanan Tiktok Downloader</p>
+    </header>
+
+    <main class="content">
+        <p id="p-intro">Dengan mengakses dan menggunakan layanan <strong>Website</strong>, Anda secara otomatis menyetujui ketentuan berikut:</p>
+        
+        <h2 id="h2-usage">Penggunaan Layanan</h2>
+        <ol id="ol-rules">
+            <li>Layanan ini disediakan hanya untuk penggunaan <strong>pribadi dan non-komersial</strong>.</li>
+            <li>Anda dilarang menggunakan layanan ini untuk melanggar hukum atau hak cipta pemilik konten asli.</li>
+            <li>Pengguna bertanggung jawab penuh atas konten yang mereka unduh dan cara penggunaannya.</li>
+            <li>Kami berhak menghentikan akses jika terdeteksi adanya penyalahgunaan sistem yang merugikan server kami.</li>
+        </ol>
+
+        <h2 id="h2-disclaimer">Pelepasan Tanggung Jawab</h2>
+        <p id="p-disclaimer">Layanan ini disediakan "apa adanya" (as is). Website tidak bertanggung jawab atas kerugian atau masalah hukum yang timbul dari penyalahgunaan konten yang diunduh melalui alat ini.</p>
+
+        <h2 id="h2-intellectual">Hak Kekayaan Intelektual</h2>
+        <p id="p-intellectual">Kami sangat menghormati hak cipta. Website hanyalah alat perantara; kami tidak berafiliasi dengan TikTok atau ByteDance Ltd. Segala hak cipta tetap milik kreator video tersebut.</p>
+
+        <a href="/" class="back-btn" id="btn-back">Kembali ke Beranda</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <strong>SUEK</strong> - Smart & Safe Downloading.</p>
+    </footer>
+</div>
+
+<script>
+    const langData = {
+        en: {
+            title: "Terms of Service - TikTok Downloader",
+            h1Title: "Terms of Service",
+            h1Desc: "Terms and conditions for using website",
+            intro: "By accessing and using website services, you automatically agree to the following terms:",
+            h2Usage: "Usage Terms",
+            olRules: [
+                "This service is provided for <strong>personal and non-commercial</strong> use only.",
+                "You are prohibited from using this service to violate any laws or original content copyrights.",
+                "Users are fully responsible for the content they download and how it is used.",
+                "We reserve the right to terminate access if system abuse is detected that harms our servers."
+            ],
+            h2Disclaimer: "Disclaimer",
+            pDisclaimer: "This service is provided 'as is'. Website is not responsible for any losses or legal issues arising from the misuse of content downloaded through this tool.",
+            h2Intellectual: "Intellectual Property",
+            pIntellectual: "We highly respect copyrights. Website is merely a tool; we are not affiliated with TikTok or ByteDance Ltd. All copyrights remain with the original video creators.",
+            btnBack: "Back to Home"
+        }
+    };
+
+    function applyLanguage() {
+        const userLang = navigator.language || navigator.userLanguage;
+        if (!userLang.startsWith('id')) {
+            const d = langData.en;
+            document.title = d.title;
+            document.getElementById('h1-title').innerText = d.h1Title;
+            document.getElementById('h1-desc').innerText = d.h1Desc;
+            document.getElementById('p-intro').innerText = d.intro;
+            document.getElementById('h2-usage').innerText = d.h2Usage;
+            document.getElementById('ol-rules').innerHTML = d.olRules.map(r => `<li>${r}</li>`).join('');
+            document.getElementById('h2-disclaimer').innerText = d.h2Disclaimer;
+            document.getElementById('p-disclaimer').innerText = d.pDisclaimer;
+            document.getElementById('h2-intellectual').innerText = d.h2Intellectual;
+            document.getElementById('p-intellectual').innerText = d.pIntellectual;
+            document.getElementById('btn-back').innerText = d.btnBack;
+        }
+    }
+    window.onload = applyLanguage;
+</script>
+
+</body>
+</html>
